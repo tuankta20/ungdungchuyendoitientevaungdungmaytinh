@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ketQua"></p>
+
+    <input id="so1">
+    <input id="so2">
+    <button type="button" onclick="cong()">phep cong</button>
+    <script>
+        function cong() {
+         let a = Number(document.getElementById("so1").value);
+         let b = Number(document.getElementById("so2").value);
+         x = document.getElementById("ketQua").innerHTML = a+b;
+        }
+    </script>
+    <button type="button" onclick="tru()">phep tru</button>
+<script>
+    function tru() {
+        let a = Number(document.getElementById("so1").value);
+        let b = Number(document.getElementById("so2").value);
+        x = document.getElementById("ketQua").innerHTML = a-b;
+    }
+</script>
+    <button type="button" onclick="nhan()">phep nhan</button>
+<script>
+    function nhan() {
+        let a = Number(document.getElementById("so1").value);
+        let b = Number(document.getElementById("so2").value);
+        x = document.getElementById("ketQua").innerHTML = a*b;
+    }
+</script>
+    <button type="button" onclick="chia()">phep chia</button>
+<script>
+    function chia() {
+        let a = Number(document.getElementById("so1").value);
+        let b = Number(document.getElementById("so2").value);
+        x = document.getElementById("ketQua").innerHTML = a/b;
+
+    }
+</script>
+
+
+
+</body>
+</html>
